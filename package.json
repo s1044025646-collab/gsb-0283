@@ -1,0 +1,24 @@
+{
+  "name": "porter-stemmer",
+  "version": "1.0.0",
+  "description": "Porter 1980 stemming with per-rule explanations (API + CLI)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/*.test.js",
+    "start": "node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "node dist/src/cli.js analyze caresses ponies relational hopping filing"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "5.9"
+  }
+}
